@@ -19,14 +19,22 @@ public class Main{
         // pooja.eat();
         // pooja.speak();
 
-        Person p2 = new Person() {
-            public void eat(){
-                System.out.println("Eat food!");
-            }
-        };
+        // Person p2 = new Person() {
+        //     public void eat(){
+        //         System.out.println("Eat food!");
+        //     }
+        // };
 
-        Shop shop = new Shop();
-        shop.shopStatus();
-        shop.getLock();
+        // Shop shop = new Shop();
+        // shop.shopStatus();
+        // shop.getLock();
+        
+
+        Lock lock = new Lock();
+        if(lock.getCode() == "123456789"){
+            System.out.println("The door is now open");
+        } else{
+            System.out.println("the door is closed");
+        }
     }
 }
