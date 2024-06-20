@@ -24,5 +24,9 @@ public class Main{
                 System.out.println("Eat food!");
             }
         };
+
+        Shop shop = new Shop();
+        shop.shopStatus();
+        shop.getLock();
     }
 }
