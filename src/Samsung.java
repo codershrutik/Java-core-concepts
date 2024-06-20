@@ -1,6 +1,10 @@
-public class Samsung{
+public class Samsung implements Phone{
 
-    public int processor(){
-        return 1000;
+    public String processor(){
+        return "1000";
+    }
+
+    public int spaceInGB(){
+        return 256;
     }
 }

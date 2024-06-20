@@ -1,5 +1,10 @@
-public class iPhone{
-    public int processor(){
-        return 15;
+public class iPhone implements Phone{
+    
+    public String processor(){
+        return "A15";
+    }
+
+    public int spaceInGB(){
+        return 256;
     }
 }
