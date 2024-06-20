@@ -1,4 +1,4 @@
-public class Samsung implements Phone{
+public class Samsung implements Phone, Andriod{
 
     public String processor(){
         return "1000";
@@ -6,5 +6,9 @@ public class Samsung implements Phone{
 
     public int spaceInGB(){
         return 256;
+    }
+
+    public String whatsapp(){
+        return "Send messages for free";
     }
 }

@@ -1,4 +1,4 @@
 public interface Phone {
-    String processor();
+    public String processor();
     int spaceInGB();
 }

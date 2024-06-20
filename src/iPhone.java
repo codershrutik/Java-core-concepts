@@ -1,4 +1,4 @@
-public class iPhone implements Phone{
+public class iPhone implements Phone, IOS{
     
     public String processor(){
         return "A15";
@@ -6,5 +6,9 @@ public class iPhone implements Phone{
 
     public int spaceInGB(){
         return 256;
+    }
+
+    public String airdrop(){
+        return "copy and paste anywhere";
     }
 }
