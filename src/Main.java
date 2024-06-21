@@ -46,8 +46,27 @@ public class Main{
 	// Child child2 = new Child(102);
 	// System.out.println(child.getX());
 
-	Child child = new Child();
-	child.India();
-	child.USA();
+	// Child child = new Child();
+	// child.India();
+	// child.USA();
+	Main main = new Main();
+	main.case1(10, 5);
+	main.case2(10, 0);
     }
+
+	public void case1(int x, int y){
+		if(y!=0){
+			System.out.println("x/y="+(x/y));
+		} else{
+			System.out.println("The value of y is 0, a possible exception");
+		}
+	}
+
+	public void case2(int x, int y){
+		try {
+			System.out.println("x/y="+(x/y));
+		} catch (Exception e) {
+			System.out.println("The value of y is 0, a possible exception"+e);
+		}
+	}
 }
