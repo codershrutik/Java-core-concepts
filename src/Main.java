@@ -73,26 +73,34 @@ public class Main{
 	// } catch(FileNotFoundException e){
 	// 	e.printStackTrace();
 	// }
-	try {
-		main.doSomething();
-	} catch(ZeroException e){
-		e.printStackTrace();
+	// try {
+	// 	main.doSomething();
+	// } catch(ZeroException e){
+	// 	e.printStackTrace();
+	// }
+	Learning learning = Learning.GENERICS;
+	switch(learning){
+		case COREJAVA -> System.out.println("Core java");
+		case COLLECTIONS -> System.out.println("Collections");
+		case GENERICS -> System.out.println("Generics");
+		case JSP -> System.out.println("JSP");
+		case MULTITHREADING -> System.out.println("Multithreading");
 	}
-	
+	System.out.println(learning.COREJAVA);
     }
-	public void doSomething() throws ZeroException{
-		// FileReader in = new FileReader("text.txt");
-		// System.out.println("Do something!");
-		String x = "zero";
-		if(x.equals("zero")){
-			throw new ZeroException();
-		}
-		System.out.println("Do something!");
-	}
+	// public void doSomething() throws ZeroException{
+	// 	// FileReader in = new FileReader("text.txt");
+	// 	// System.out.println("Do something!");
+	// 	String x = "zero";
+	// 	if(x.equals("zero")){
+	// 		throw new ZeroException();
+	// 	}
+	// 	System.out.println("Do something!");
+	// }
 
-	class ZeroException extends Exception{
+	// class ZeroException extends Exception{
 
-	}
+	// }
 
 	// public void case1(int x, int y){
 	// 	if(y!=0){
