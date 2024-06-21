@@ -68,14 +68,25 @@ public class Main{
 	// 	System.out.println(y);
 	// }
 	Main main = new Main();
-	try{
+	// try{
+	// 	main.doSomething();
+	// } catch(FileNotFoundException e){
+	// 	e.printStackTrace();
+	// }
+	try {
 		main.doSomething();
-	} catch(FileNotFoundException e){
-		e.printStackTrace();
+	} finally{
+		System.out.println("Meh");
 	}
+	
     }
 	public void doSomething() throws FileNotFoundException{
-		FileReader in = new FileReader("text.txt");
+		// FileReader in = new FileReader("text.txt");
+		// System.out.println("Do something!");
+		String x = "zero";
+		if(x.equals("zero")){
+			throw new RuntimeException();
+		}
 		System.out.println("Do something!");
 	}
 
