@@ -40,10 +40,14 @@ public class Main{
   	//Outer outer = new Outer();
 	// outer.Inner.message();
 
-	Child child = new Child(3);
-	System.out.println(child.getX());
-	// child.setX(99);
-	Child child2 = new Child(102);
-	System.out.println(child.getX());
+	// Child child = new Child(3);
+	// System.out.println(child.getX());
+	// // child.setX(99);
+	// Child child2 = new Child(102);
+	// System.out.println(child.getX());
+
+	Child child = new Child();
+	child.India();
+	child.USA();
     }
 }
