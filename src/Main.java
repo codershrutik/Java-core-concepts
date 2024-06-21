@@ -75,19 +75,23 @@ public class Main{
 	// }
 	try {
 		main.doSomething();
-	} finally{
-		System.out.println("Meh");
+	} catch(ZeroException e){
+		e.printStackTrace();
 	}
 	
     }
-	public void doSomething() throws FileNotFoundException{
+	public void doSomething() throws ZeroException{
 		// FileReader in = new FileReader("text.txt");
 		// System.out.println("Do something!");
 		String x = "zero";
 		if(x.equals("zero")){
-			throw new RuntimeException();
+			throw new ZeroException();
 		}
 		System.out.println("Do something!");
+	}
+
+	class ZeroException extends Exception{
+
 	}
 
 	// public void case1(int x, int y){
