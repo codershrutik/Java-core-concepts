@@ -56,18 +56,28 @@ public class Main{
 	int x;
 	int y=0;
 
-	try {
-		System.out.println("before exception");
-		x=(y=10*10)/0;
-		System.out.println("after exception");
-	} catch (ArithmeticException e) {
-		System.out.println("arithmatic exception");
-	} catch (Exception e){
-		System.out.println("exception");
-	} finally{
-		System.out.println(y);
+	// try {
+	// 	System.out.println("before exception");
+	// 	x=(y=10*10)/0;
+	// 	System.out.println("after exception");
+	// } catch (ArithmeticException e) {
+	// 	System.out.println("arithmatic exception");
+	// } catch (Exception e){
+	// 	System.out.println("exception");
+	// } finally{
+	// 	System.out.println(y);
+	// }
+	Main main = new Main();
+	try{
+		main.doSomething();
+	} catch(FileNotFoundException e){
+		e.printStackTrace();
 	}
     }
+	public void doSomething() throws FileNotFoundException{
+		FileReader in = new FileReader("text.txt");
+		System.out.println("Do something!");
+	}
 
 	// public void case1(int x, int y){
 	// 	if(y!=0){
