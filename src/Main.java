@@ -2,7 +2,7 @@
 
 public class Main{
     public static void main(String[] args) {
-        iPhone phone1 = new iPhone();
+        // iPhone phone1 = new iPhone();
         // String p = phone1.processor();
         // System.out.println(p);
 
@@ -30,11 +30,14 @@ public class Main{
         // shop.getLock();
         
 
-        Lock lock = new Lock();
-        if(lock.getCode() == "123456789"){
-            System.out.println("The door is now open");
-        } else{
-            System.out.println("the door is closed");
-        }
+        // Lock lock = new Lock();
+        // if(lock.getCode() == "123456789"){
+        //     System.out.println("The door is now open");
+        // } else{
+        //     System.out.println("the door is closed");
+        // }
+
+        Outer outer = new Outer();
+		outer.Inner.message();
     }
 }
