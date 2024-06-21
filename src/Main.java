@@ -37,7 +37,13 @@ public class Main{
         //     System.out.println("the door is closed");
         // }
 
-        Outer outer = new Outer();
-		outer.Inner.message();
+  	//Outer outer = new Outer();
+	// outer.Inner.message();
+
+	Child child = new Child(3);
+	System.out.println(child.getX());
+	// child.setX(99);
+	Child child2 = new Child(102);
+	System.out.println(child.getX());
     }
 }
